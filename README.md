@@ -52,6 +52,7 @@ You can change them at ```src/main/resources/data.sql```.
 
 To start the application (from the root of the project):
 
+- `mvn clean install`
 - `docker-compose build --no-cache`
 - `docker-compose up`
 - (Optional) Run in detached mode: `docker-compose up -d`

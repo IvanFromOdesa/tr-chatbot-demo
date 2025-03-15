@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  report_db:
+    image: postgres:16
+    container_name: report_db
+    restart: always
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: reports
+    ports:
+      - "5439:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U pguser -d reports" ] # Check if Postgres is ready
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  pgvector_db:
+    image: ankane/pgvector:latest
+    container_name: pgvector_db
+    restart: always
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: vector_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U pguser -d vector_db" ] # Check if Postgres is ready
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  app:
+    build: .
+    container_name: tr-chatbot-demo
+    restart: no
+    depends_on:
+      report_db:
+        condition: service_healthy # Wait for health check to pass
+      pgvector_db:
+        condition: service_healthy # Wait for health check to pass
+    environment:
+      # Relational DB Configuration
+      RELATIONAL_DB_URL: jdbc:postgresql://report_db:5432/reports
+      RELATIONAL_DB_USERNAME: pguser
+      RELATIONAL_DB_PASSWORD: 12345678
+
+      # Vector DB Configuration
+      VECTOR_DB_URL: jdbc:postgresql://pgvector_db:5432/vector_db
+      VECTOR_DB_USERNAME: pguser
+      VECTOR_DB_PASSWORD: 12345678
+
+      # Other environment variables
+      SPRING_APPLICATION_NAME: tr-chatbot-demo
+      SPRING_AI_OPENAI_API_KEY: your-api-key
+      DEEPL_API_KEY: deepl-api-key
+      SPRING_MAIL_PORT: 587
+      SPRING_MAIL_USERNAME: mail-username
+      SPRING_MAIL_PASSWORD: mail-password
+      FILE_UPLOAD_DIR: /app/uploads
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+
+volumes:
+  postgres_data:
+  pgvector_data:
+  uploads:
+  logs:

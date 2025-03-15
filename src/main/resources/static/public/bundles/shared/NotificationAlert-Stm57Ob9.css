@@ -1,0 +1,1 @@
+.notification-alert{display:flex;align-items:center;justify-content:center;text-align:center;padding:.5rem;font-size:.9rem;margin-top:auto;position:relative}.notification-alert .btn-close{position:absolute;top:50%;transform:translateY(-50%);right:.5rem;padding:.1rem}.notification-alert p{margin:0}

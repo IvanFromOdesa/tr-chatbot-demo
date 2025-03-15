@@ -1,0 +1,63 @@
+{
+  "bundle": {
+    "page.title": "Log In",
+    "page.signin": "Sign In",
+    "page.enterEmail": "Email",
+    "page.enterPassword": "Password",
+    "page.noAccount": "Don't have an account?",
+    "page.signup": "Sign Up",
+
+    "page.error.login": "Invalid email or password",
+
+    "nav.language": "Language",
+    "nav.logIn": "Log In",
+    "vh.loading": "Loading",
+    "footer.title": "© 2025 Ivan Krylosov | TR Chatbot | AI-Powered Chat Assistant",
+    "footer.contact": "<a href=\"mailto:ivankrylosov123@gmail.com\">Contact</a>",
+    "footer.linkedIn": "<a href=\"https://www.linkedin.com/in/ivan-krylosov-b9433a244/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>",
+    "footer.github": "<a href=\"https://github.com/IvanFromOdesa\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
+  },
+  "navMenu": {
+    "logoPath": "/logo.svg",
+    "languages": [
+      {
+        "alias": "en-US",
+        "name": "English",
+        "helpText": "Please select the language",
+        "imagePath": "/lang-icons/en.webp"
+      },
+      {
+        "alias": "uk",
+        "name": "Українська",
+        "helpText": "Будь ласка, оберіть мову",
+        "imagePath": "/lang-icons/ukr.webp"
+      },
+      {
+        "alias": "nb",
+        "name": "Bokmål",
+        "helpText": "Vennligst velg språket",
+        "imagePath": "/lang-icons/nb.webp"
+      },
+      {
+        "alias": "ru",
+        "name": "Русский",
+        "helpText": "Пожалуйста, выберите язык",
+        "imagePath": "/lang-icons/ru.webp"
+      }
+    ]
+  },
+  "pathNavigation": {
+    "home": "/",
+    "homeInit": "/api/init",
+    "login": "/login",
+    "loginInit": "/api/login/init",
+    "loginSubmit": "/api/login",
+    "signup": "/signup",
+    "signupInit": "/api/signup/init",
+    "signupSubmit": "/api/signup",
+    "sessionMsg": "/api/session-msg",
+    "langPreference": "/api/preferences/lang",
+    "tos": "/terms-and-conditions"
+  },
+  "locale": "en-US"
+}

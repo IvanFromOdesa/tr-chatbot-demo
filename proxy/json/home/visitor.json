@@ -1,0 +1,90 @@
+{
+  "bundle": {
+    "page.visitor.greeting": "Hello, {0}!",
+    "page.visitor.tip": "Ask me anything! I'm here to help.",
+    "page.visitor.type": "What is your question?",
+    "page.visitor.send": "Send",
+    "page.visitor.feedback": "Were we able to solve your issue?",
+    "page.visitor.feedback.positive": "Sure!",
+    "page.visitor.feedback.negative": "Not yet...",
+
+    "page.visitor.askedAt": "Asked at",
+    "page.visitor.answeredAt": "Answered at",
+    "page.visitor.timeToProcess": "Time taken (in seconds) to process the request.",
+
+    "avatars.robot.advanced": "Advanced Robot",
+    "avatars.robot.supreme": "Supreme Robot",
+    "avatars.robot.base": "Base Robot",
+    "avatars.user.amyRockstar": "Amy Rockstar",
+    "avatars.user.asianWoman": "Asian Woman",
+    "avatars.user.batman": "Batman",
+    "avatars.user.blackPanther": "Black Panther",
+    "avatars.user.captainJackSparrow": "Captain Jack Sparrow",
+    "avatars.user.discJockey": "Disc Jockey",
+    "avatars.user.kurtCobain": "Kurt Cobain",
+    "avatars.user.mickJagger": "Mick Jagger",
+    "avatars.user.neo": "Neo",
+    "avatars.user.whiteMan": "White Man",
+    "avatars.user.whiteWoman": "White Woman",
+    "avatars.user.youngBlonde": "Young Blonde",
+
+    "nav.language": "Language",
+    "nav.logIn": "Log In",
+    "nav.logout": "Log Out",
+    "vh.loading": "Loading",
+    "footer.title": "© 2025 Ivan Krylosov | TR Chatbot | AI-Powered Chat Assistant",
+    "footer.contact": "<a href=\"mailto:ivankrylosov123@gmail.com\">Contact</a>",
+    "footer.linkedIn": "<a href=\"https://www.linkedin.com/in/ivan-krylosov-b9433a244/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>",
+    "footer.github": "<a href=\"https://github.com/IvanFromOdesa\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
+  },
+  "navMenu": {
+    "logoPath": "/logo.svg",
+    "languages": [
+      {
+        "alias": "en-US",
+        "name": "English",
+        "helpText": "Please select the language",
+        "imagePath": "/lang-icons/en.webp"
+      },
+      {
+        "alias": "uk",
+        "name": "Українська",
+        "helpText": "Будь ласка, оберіть мову",
+        "imagePath": "/lang-icons/ukr.webp"
+      },
+      {
+        "alias": "nb",
+        "name": "Bokmål",
+        "helpText": "Vennligst velg språket",
+        "imagePath": "/lang-icons/nb.webp"
+      },
+      {
+        "alias": "ru",
+        "name": "Русский",
+        "helpText": "Пожалуйста, выберите язык",
+        "imagePath": "/lang-icons/ru.webp"
+      }
+    ]
+  },
+  "pathNavigation": {
+    "home": "/",
+    "homeInit": "/api/init",
+    "sessionMsg": "/api/session-msg",
+    "langPreference": "/api/preferences/lang",
+    "avatarIcons": "/avatars/avatars.json",
+    "chat": "/api/chat",
+    "chatFeedback": "/api/chat/feedback",
+    "currentConversation": "/api/chat/conversation/current",
+    "logout": "/logout"
+  },
+  "userData": {
+    "firstName": "Ivan",
+    "lastName": "Krylosov",
+    "email": "ivk@mail.com",
+    "role": {
+      "code": 0,
+      "alias": "visitor"
+    }
+  },
+  "locale": "en-US"
+}

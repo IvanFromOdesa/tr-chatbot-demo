@@ -1,0 +1,16 @@
+/* AdminGreeting.css */
+.admin-greeting-container {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.admin-greeting {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 8px;
+}

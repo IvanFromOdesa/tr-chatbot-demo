@@ -1,0 +1,25 @@
+/* Login.css */
+.form-content {
+    max-width: 400px;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343a40;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form .form-control {
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .login-content {
+        padding: 1.5rem;
+    }
+}

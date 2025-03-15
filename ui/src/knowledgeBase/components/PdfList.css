@@ -1,0 +1,10 @@
+.pdf-preview {
+    max-height: 200px;
+    width: auto
+}
+
+@media (max-width: 575.98px) {
+    .pt-xs-3 {
+        padding-top: 1rem !important; /* Equivalent to Bootstrap's pt-3 */
+    }
+}

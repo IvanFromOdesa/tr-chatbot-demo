@@ -1,0 +1,22 @@
+.notification-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+    position: relative;
+}
+
+.notification-alert .btn-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.5rem;
+    padding: 0.1rem;
+}
+
+.notification-alert p {
+    margin:0;
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "avatars.robot.advanced",
+    "path": "/avatars/bot/robot_1.svg",
+    "type": "Bot"
+  },
+  {
+    "name": "avatars.robot.supreme",
+    "path": "/avatars/bot/robot_2.svg",
+    "type": "Bot"
+  },
+  {
+    "name": "avatars.robot.base",
+    "path": "/avatars/bot/robot_3.svg",
+    "type": "Bot"
+  },
+  {
+    "name": "avatars.user.amyRockstar",
+    "path": "/avatars/user/amy_rockstar.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.asianWoman",
+    "path": "/avatars/user/asian_woman.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.batman",
+    "path": "/avatars/user/batman.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.blackPanther",
+    "path": "/avatars/user/black_panther.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.captainJackSparrow",
+    "path": "/avatars/user/captain_jack_sparrow.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.discJockey",
+    "path": "/avatars/user/disc_jockey.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.kurtCobain",
+    "path": "/avatars/user/kurt_cobain.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.mickJagger",
+    "path": "/avatars/user/mick_jagger.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.neo",
+    "path": "/avatars/user/neo.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.whiteMan",
+    "path": "/avatars/user/white_man.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.whiteWoman",
+    "path": "/avatars/user/white_woman.svg",
+    "type": "User"
+  },
+  {
+    "name": "avatars.user.youngBlonde",
+    "path": "/avatars/user/young_blonde.svg",
+    "type": "User"
+  }
+]

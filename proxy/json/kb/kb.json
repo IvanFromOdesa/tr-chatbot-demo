@@ -1,0 +1,154 @@
+{
+  "bundle": {
+    "page.title": "Knowledge Base Management",
+    "page.kbm.desc": "You oversee the Knowledge Base, curating its contents by uploading fresh data—be it PDFs or Q&A—refining existing entries, and purging what no longer serves its purpose. It’s a quiet, meticulous task—maintaining order in a space that few notice, until they need it.",
+    "page.section.pdfs": "Uploaded PDFs",
+    "page.section.qa": "Question-Answer Pairs",
+
+    "page.view.pdf.title": "View Uploaded PDFs",
+    "page.view.pdf.desc": "Below are listed uploaded PDF files to the knowledge database. You can upload more or delete existing ones.",
+    "page.view.pdf.fileName": "File name:",
+    "page.view.pdf.ogFileName": "Original file name:",
+    "page.view.pdf.size": "Size:",
+    "page.view.pdf.multilingual": "Multilingual:",
+    "page.view.pdf.multilingual.enabled.tip": "This document was translated into the supported languages.",
+    "page.view.pdf.multilingual.disabled.tip": "This document is stored only in the original language.",
+    "page.pdf.fileSize.b": "B",
+    "page.pdf.fileSize.kb": "KB",
+    "page.pdf.fileSize.mb": "MB",
+    "page.pdf.validation.size": "Each file must be under {0}.",
+    "page.pdf.validation.format": "Only PDF files are allowed.",
+    "page.pdf.validation.required": "Select at least one PDF file.",
+
+    "page.view.uploadedAt": "Uploaded at:",
+    "page.view.uploadedBy": "Uploaded by:",
+
+    "page.view.pdf.upload": "Upload New PDF",
+    "page.view.pdf.delete.confirm": "Are you sure you want to delete this PDF?",
+    "page.view.pdf.pagination": "Showing {0} to {1} of {2} PDFs.",
+
+    "page.view.qa.title": "Manage Question-Answer Pairs",
+    "page.view.qa.desc": "Below are listed uploaded Question-Answers to the knowledge database. You can upload, modify or delete existing ones.",
+    "page.view.qa.delete.confirm": "Are you sure you want to delete this question-answer pair?",
+    "page.view.qa.pagination": "Showing {0} to {1} of {2} QA pairs",
+    "page.view.qa.q": "Q:",
+    "page.view.qa.a": "A:",
+    "page.view.qa.ts": "Translate status:",
+    "page.view.qa.og": "Navigate to Original",
+    "page.view.qa.ts.og": "Original",
+    "page.view.qa.ts.tr": "Translated",
+    "page.view.qa.ts.tip": "The \"Translate Status\" specifies whether a given question-answer pair was uploaded in its original language or translated by the server from the original version.",
+    "page.view.qa.language": "Language:",
+
+    "page.view.qa.add": "Add QA Pairs",
+    "page.view.qa.modal.add": "Add new QA Pair",
+    "page.view.qa.modal.tips": "For  guidance on forming questions and answers see",
+    "page.view.qa.modal.tipsLink": "Our tips.",
+    "page.view.qa.modal.q": "Question",
+    "page.view.qa.modal.a": "Answer",
+    "page.view.qa.model.q.example": "Ex: How do I reset my password?",
+    "page.view.qa.model.a.example": "Ex: Click \"Forgot Password\" on the login page and follow the instructions in your email.",
+    "page.view.qa.modal.q.validation.required": "Question is required.",
+    "page.view.qa.modal.a.validation.required": "Answer is required.",
+    "page.view.qa.modal.q.validation.size": "Question must be at most 100 characters.",
+    "page.view.qa.modal.a.validation.size": "Answer must be at most 1000 characters.",
+
+    "action.empty": "Wow, so empty...",
+    "action.enableTranslation": "Translate to supported languages",
+    "action.save": "Save",
+    "action.cancel": "Cancel",
+    "action.confirm": "Confirm",
+    "action.delete": "Delete",
+    "action.edit": "Edit",
+    "action.selectFromDevice": "Select from local storage",
+    "action.upload": "Upload",
+    "action.download": "Download",
+    "action.yes": "Yes",
+    "action.no": "No",
+    "action.back": "Back",
+    "action.next": "Next",
+    "action.previous": "Previous",
+    "notification.success.upload": "The data has been uploaded successfully. It will be processed shortly, and you will receive a message once the processing is complete.",
+    "notification.success.delete": "Deleted successfully.",
+    "notification.success.save": "Changes saved successfully.",
+    "notification.error.upload": "Failed to upload.",
+    "notification.error.delete": "Failed to delete.",
+    "notification.error.save": "Failed to save changes.",
+
+    "nav.language": "Language",
+    "nav.logIn": "Log In",
+    "nav.logout": "Log Out",
+    "vh.loading": "Loading",
+    "footer.title": "© 2025 Ivan Krylosov | TR Chatbot | AI-Powered Chat Assistant",
+    "footer.contact": "<a href=\"mailto:ivankrylosov123@gmail.com\">Contact</a>",
+    "footer.linkedIn": "<a href=\"https://www.linkedin.com/in/ivan-krylosov-b9433a244/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>",
+    "footer.github": "<a href=\"https://github.com/IvanFromOdesa\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
+  },
+  "navMenu": {
+    "logoPath": "/logo.svg",
+    "languages": [
+      {
+        "alias": "en-US",
+        "name": "English",
+        "helpText": "Please select the language",
+        "imagePath": "/lang-icons/en.webp"
+      },
+      {
+        "alias": "uk",
+        "name": "Українська",
+        "helpText": "Будь ласка, оберіть мову",
+        "imagePath": "/lang-icons/ukr.webp"
+      },
+      {
+        "alias": "nb",
+        "name": "Bokmål",
+        "helpText": "Vennligst velg språket",
+        "imagePath": "/lang-icons/nb.webp"
+      },
+      {
+        "alias": "ru",
+        "name": "Русский",
+        "helpText": "Пожалуйста, выберите язык",
+        "imagePath": "/lang-icons/ru.webp"
+      }
+    ]
+  },
+  "pathNavigation": {
+    "home": "/",
+    "homeInit": "/api/init",
+    "sessionMsg": "/api/session-msg",
+    "langPreference": "/api/preferences/lang",
+    "knowledgeBase": "/knowledge-base",
+    "knowledgeBaseInit": "/api/knowledge-base/init",
+    "knowledgeBaseGetQAs": "/api/knowledge-base/qa",
+    "knowledgeBaseGetPdfs": "/api/knowledge-base/pdf",
+    "knowledgeBaseUploadPdf": "/api/knowledge-base/upload/pdf",
+    "knowledgeBaseUploadJson": "/api/knowledge-base/upload/json",
+    "knowledgeBasePdfPreview": "/api/knowledge-base/preview/pdf",
+    "knowledgeBasePdfDownload": "/api/knowledge-base/download/pdf",
+    "report": "/report",
+    "reportInit": "/api/report/init",
+    "reportDownload": "/api/report/download",
+    "howTo": "/how-to",
+    "logout": "/logout"
+  },
+  "assets": {
+    "chatBot": "/assets/chatbot.svg",
+    "noData": "/assets/no_data.svg"
+  },
+  "userData": {
+    "firstName": "Ivan",
+    "lastName": "Krylosov",
+    "email": "ivk@mail.com",
+    "role": {
+      "code": 1,
+      "alias": "employee"
+    }
+  },
+  "qaValidation": {
+    "questionMaxSize": 100,
+    "answerMaxSize": 1000
+  },
+  "maxUploadFileSize": "10MB",
+  "locale": "en-US"
+}

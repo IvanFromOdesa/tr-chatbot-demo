@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <title th:text="${pageTitle}"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Load bootstrap immediately-->
+    <link th:href="@{/public/bundles/shared/index-DnVUw_vK.css}" rel="stylesheet">
+    <link th:href="@{/public/bundles/shared/mainCss-BcHH3VqE.css}" rel="stylesheet">
+    <link sec:authorize="isAnonymous()" th:href="@{/public/bundles/homeAnonymous/homeAnonymous-CmBDo8fJ.css}" rel="stylesheet">
+    <link sec:authorize="isEmployee()" th:href="@{/public/bundles/homeEmployee/homeEmployee-DAQs35Vd.css}" rel="stylesheet">
+    <link sec:authorize="isVisitor()" th:href="@{/public/bundles/homeVisitor/homeVisitor-CR-J1alR.css}" rel="stylesheet">
+</head>
+<body th:class="${#authorization.expression('isAuthenticated()')} ? 'has-navbar-padding' : ''">
+<div id="root"></div>
+<script sec:authorize="isAnonymous()" type="module" th:src="@{/public/bundles/homeAnonymous/homeAnonymous.js}"></script>
+<script sec:authorize="isEmployee()" type="module" th:src="@{/public/bundles/homeEmployee/homeEmployee.js}"></script>
+<script sec:authorize="isVisitor()" type="module" th:src="@{/public/bundles/homeVisitor/homeVisitor.js}"></script>
+</body>
+</html>

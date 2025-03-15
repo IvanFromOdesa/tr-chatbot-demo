@@ -1,0 +1,91 @@
+{
+  "bundle": {
+    "page.title": "Home",
+    "page.bep.title": "Instantly Find <span class=\"highlighted\">Answers</span> <br/> with Our AI-Powered <span class=\"highlighted\">Chatbot</span>",
+    "page.bep.desc": "Tired of searching through endless documents? Our chatbot uses advanced artificial intelligence to understand your questions and provide concise, accurate answers. We leverage Retrieval Augmented Generation (RAG) to connect you with the most relevant information from our knowledge base. Experience the future of information access.",
+    "page.btn.cta": "Get Started",
+    "page.howItWorks.title": "How It Works",
+    "page.howItWorks.ia.title": "Instant Answers",
+    "page.howItWorks.ia.desc": "Get the information you need in seconds.",
+    "page.howItWorks.sa.title": "Simplified Access",
+    "page.howItWorks.sa.desc": "Ask questions in your own words.",
+    "page.howItWorks.ck.title": "Comprehensive Knowledge",
+    "page.howItWorks.ck.desc": "Access a constantly updated knowledge base.",
+    "page.howItWorks.ip.title": "Improved Productivity",
+    "page.howItWorks.ip.desc": "Save time and focus on your tasks.",
+    "page.howItWorks.av.title": "24/7 Availability",
+    "page.howItWorks.av.desc": "Get answers whenever you need them.",
+    "page.howItWorks.cr.title": "Consistent Responses",
+    "page.howItWorks.cr.desc": "Reliable and accurate information every time.",
+    "page.howItWorks.ms.title": "Multilingual Support",
+    "page.howItWorks.ms.desc": "Ask questions in the supported language.",
+
+    "page.kb.title": "Key Benefits",
+    "page.howToUse.as.title": "Ask",
+    "page.howToUse.as.desc": "Ask your question in your preferred language.",
+    "page.howToUse.se.title": "Search",
+    "page.howToUse.se.desc": "Our AI searches our multilingual knowledge base.",
+    "page.howToUse.an.title": "Answer",
+    "page.howToUse.an.desc": "You receive a clear and concise answer in the same language you asked the question.",
+
+    "page.kbm.title": "Knowledge Base Management",
+    "page.kbm.desc": "Employees can easily upload PDF documents and add question-answer pairs to expand the chatbot's knowledge base. This ensures the chatbot provides the most relevant and accurate information.",
+    "page.kbm.ud.title": "Upload Documents",
+    "page.kbm.ud.desc": "Employees can easily upload PDF documents to expand the chatbot's knowledge base.",
+    "page.kbm.qa.title": "Add Q&A Pairs",
+    "page.kbm.qa.desc": "Employees can also directly add question-answer pairs for specific topics.",
+    "page.kbm.ci.title": "Continuous Improvement",
+    "page.kbm.ci.desc": "The knowledge base is constantly updated, ensuring the chatbot provides the most relevant and accurate information.",
+
+    "nav.language": "Language",
+    "nav.logIn": "Log In",
+    "vh.loading": "Loading",
+    "footer.title": "© 2025 Ivan Krylosov | TR Chatbot | AI-Powered Chat Assistant",
+    "footer.contact": "<a href=\"mailto:ivankrylosov123@gmail.com\">Contact</a>",
+    "footer.linkedIn": "<a href=\"https://www.linkedin.com/in/ivan-krylosov-b9433a244/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>",
+    "footer.github": "<a href=\"https://github.com/IvanFromOdesa\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
+  },
+  "navMenu": {
+    "logoPath": "/logo.svg",
+    "languages": [
+      {
+        "alias": "en-US",
+        "name": "English",
+        "helpText": "Please select the language",
+        "imagePath": "/lang-icons/en.webp"
+      },
+      {
+        "alias": "uk",
+        "name": "Українська",
+        "helpText": "Будь ласка, оберіть мову",
+        "imagePath": "/lang-icons/ukr.webp"
+      },
+      {
+        "alias": "nb",
+        "name": "Bokmål",
+        "helpText": "Vennligst velg språket",
+        "imagePath": "/lang-icons/nb.webp"
+      },
+      {
+        "alias": "ru",
+        "name": "Русский",
+        "helpText": "Пожалуйста, выберите язык",
+        "imagePath": "/lang-icons/ru.webp"
+      }
+    ]
+  },
+  "pathNavigation": {
+    "home": "/",
+    "homeInit": "/api/init",
+    "login": "/login",
+    "loginInit": "/api/login/init",
+    "loginSubmit": "/api/login",
+    "signup": "/signup",
+    "signupInit": "/api/signup/init",
+    "signupSubmit": "/api/signup",
+    "sessionMsg": "/api/session-msg",
+    "langPreference": "/api/preferences/lang",
+    "tos": "/terms-and-conditions"
+  },
+  "locale": "en-US"
+}

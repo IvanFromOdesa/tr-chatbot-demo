@@ -1,0 +1,86 @@
+{
+  "bundle": {
+    "page.greeting": "Hello, {0}!",
+
+    "page.kdb.title": "Knowledge Database Management",
+    "page.kdb.desc": "You're in charge of managing the Knowledge Database for the application. Here's what you can do:",
+    "page.kdb.ai.title": "Add Information",
+    "page.kdb.ai.desc": "Enter question-answer pairs manually or upload PDF documents to expand the database.",
+    "page.kdb.me.title": "Modify Entries",
+    "page.kdb.me.desc": "Update existing data to keep it accurate and relevant.",
+    "page.kdb.rid.title": "Remove Irrelevant Data",
+    "page.kdb.rid.desc": "Delete outdated or unnecessary entries to maintain a clean and efficient knowledge base.",
+    "page.kdb.link": "Manage Knowledge Database",
+
+    "page.rs.title": "Users' Conversation Report Statistics",
+    "page.rs.desc": "You're responsible for monitoring and analyzing conversation reports to improve the chatbot's performance. Here's what you can do:",
+    "page.rs.vcs.title": "View Conversation Statistics",
+    "page.rs.vcs.desc": "Access detailed insights on how users interact with the chatbot.",
+    "page.rs.dr.title": "Download Reports",
+    "page.rs.dr.desc": "Export statistics in CSV format for further analysis.",
+    "page.rs.link": "Conversation Report Statistics",
+
+    "nav.language": "Language",
+    "nav.logIn": "Log In",
+    "nav.logout": "Log Out",
+    "vh.loading": "Loading",
+    "footer.title": "© 2025 Ivan Krylosov | TR Chatbot | AI-Powered Chat Assistant",
+    "footer.contact": "<a href=\"mailto:ivankrylosov123@gmail.com\">Contact</a>",
+    "footer.linkedIn": "<a href=\"https://www.linkedin.com/in/ivan-krylosov-b9433a244/\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn</a>",
+    "footer.github": "<a href=\"https://github.com/IvanFromOdesa\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>"
+  },
+  "navMenu": {
+    "logoPath": "/logo.svg",
+    "languages": [
+      {
+        "alias": "en-US",
+        "name": "English",
+        "helpText": "Please select the language",
+        "imagePath": "/lang-icons/en.webp"
+      },
+      {
+        "alias": "uk",
+        "name": "Українська",
+        "helpText": "Будь ласка, оберіть мову",
+        "imagePath": "/lang-icons/ukr.webp"
+      },
+      {
+        "alias": "nb",
+        "name": "Bokmål",
+        "helpText": "Vennligst velg språket",
+        "imagePath": "/lang-icons/nb.webp"
+      },
+      {
+        "alias": "ru",
+        "name": "Русский",
+        "helpText": "Пожалуйста, выберите язык",
+        "imagePath": "/lang-icons/ru.webp"
+      }
+    ]
+  },
+  "pathNavigation": {
+    "home": "/",
+    "homeInit": "/api/init",
+    "sessionMsg": "/api/session-msg",
+    "langPreference": "/api/preferences/lang",
+    "knowledgeBase": "/knowledge-base",
+    "knowledgeBaseInit": "/api/knowledge-base/init",
+    "knowledgeBaseUploadPdf": "/api/knowledge-base/upload/pdf",
+    "knowledgeBaseUploadJson": "/api/knowledge-base/upload/json",
+    "knowledgeBasePdfPreview": "/api/knowledge-base/preview/pdf",
+    "report": "/report",
+    "reportInit": "/api/report/init",
+    "reportDownload": "/api/report/download",
+    "logout": "/logout"
+  },
+  "userData": {
+    "firstName": "Ivan",
+    "lastName": "Krylosov",
+    "email": "ivk@mail.com",
+    "role": {
+      "code": 1,
+      "alias": "employee"
+    }
+  },
+  "locale": "en-US"
+}

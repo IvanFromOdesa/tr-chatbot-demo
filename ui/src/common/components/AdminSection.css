@@ -1,0 +1,54 @@
+/* AdminSections.css */
+.admin-section {
+    padding: 2rem 0;
+}
+
+.admin-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.admin-icon {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.admin-title {
+    font-size: 1.8rem; /* Increased font size */
+    margin-bottom: 1.5rem; /* Increased margin */
+    color: #333;
+    font-weight: 600; /* Bolder font weight */
+    background-color: #f0f8ff; /* Light background for title */
+    padding: 1rem; /* Add padding to title */
+    border-radius: 8px;
+}
+
+.admin-desc {
+    margin-bottom: 2.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.admin-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2.5rem;
+}
+
+.admin-list li {
+    margin-bottom: 2rem;
+}
+
+.admin-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.admin-subdesc {
+    color: #666;
+    line-height: 1.6;
+}

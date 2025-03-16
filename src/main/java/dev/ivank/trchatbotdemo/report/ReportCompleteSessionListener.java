@@ -19,15 +19,17 @@ public class ReportCompleteSessionListener implements HttpSessionListener {
     @Override
     public void sessionDestroyed(HttpSessionEvent se) {
         Report report = (Report) se.getSession().getAttribute("userReport");
-        Long id = report.getId();
-        if (id != null) {
-            Optional<Report> byId = reportEntityService.getById(id);
-            if (byId.isPresent()) {
-                if (!byId.get().getReportStatus().isCompleted()) {
-                    report.setReportStatus(ReportStatus.COMPLETED_IMPLICITLY);
+        if (report != null) {
+            Long id = report.getId();
+            if (id != null) {
+                Optional<Report> byId = reportEntityService.getById(id);
+                if (byId.isPresent()) {
+                    if (!byId.get().getReportStatus().isCompleted()) {
+                        report.setReportStatus(ReportStatus.COMPLETED_IMPLICITLY);
+                    }
+                    report.setFinishedAt(Instant.now());
+                    reportEntityService.save(report);
                 }
-                report.setFinishedAt(Instant.now());
-                reportEntityService.save(report);
             }
         }
     }

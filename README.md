@@ -56,6 +56,6 @@ To start the application (from the root of the project):
 - `docker-compose build --no-cache`
 - `docker-compose up`
 - (Optional) Run in detached mode: `docker-compose up -d`
-- To stop: `docker-compose down`
+- To stop: `docker-compose stop`
 
 
